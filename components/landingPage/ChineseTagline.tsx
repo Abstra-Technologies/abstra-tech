@@ -41,11 +41,28 @@ export default function ChineseTagline({ delay = 0 }: Props) {
 
         <h2
             ref={textRef}
-            className="mt-6 text-5xl typographica  font-medium tracking-tight
-                 text-zinc-700 dark:text-zinc-300"
+            className="
+    mt-6
+    text-5xl
+    typographica
+    select-none
+    font-medium
+    tracking-tight
+    flex
+    flex-wrap
+    gap-x-1
+  "
         >
-            化繁为简，工程未来
+            {"化繁为简，工程未来".split("").map((char, i) => (
+                <span
+                    key={i}
+                    className="cn-char gold-cn-char inline-block"
+                >
+      {char}
+    </span>
+            ))}
         </h2>
+
 
     );
 }
