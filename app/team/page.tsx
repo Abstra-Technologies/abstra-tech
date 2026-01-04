@@ -14,30 +14,24 @@ const team = [
         name: "Bryan Lim",
         role: "Co-founder",
         bio: "Leads architecture, platform engineering, and long-term technical strategy. Focused on building durable systems that scale responsibly.",
-        image: "/team/bryan.jpg", // replace when ready
+        image: "https://media.licdn.com/dms/image/v2/D5603AQGMLSH52DJ5fQ/profile-displayphoto-crop_800_800/B56Zmj6kqcG4AI-/0/1759391666675?e=1769040000&v=beta&t=V-W5uNZWGRjdu_b7Zm7TdRSg1v9jStBzddqjrVTw2EE", // replace when ready
         socials: {
             facebook: "https://facebook.com/yourprofile",
-            linkedin: "https://linkedin.com/in/yourprofile",
-            email: "mailto:hello@abstratech.com",
-            phone: "tel:+639XXXXXXXXX",
+            linkedin: "https://www.linkedin.com/in/brylimziliang",
+            email: "mailto:bryanqlim@gmail.com",
+            phone: "mobile: +639213218888",
+            wechat: "https://wechat.com/",
         },
     },
     {
-        name: "—",
-        role: "Engineering",
-        bio: "Responsible for designing, building, and maintaining scalable, production-grade systems.",
+        name: "Christian Matthew Untalan",
+        role: "Co-Founder",
+        bio: "",
         image: "/team/placeholder.jpg",
         socials: {
-            email: "mailto:careers@abstratech.com",
-        },
-    },
-    {
-        name: "—",
-        role: "Product & Operations",
-        bio: "Bridges engineering with real-world workflows to ensure systems remain practical and user-centered.",
-        image: "/team/placeholder.jpg",
-        socials: {
-            email: "mailto:hello@abstratech.com",
+            email: "mailto:mattuntalan2@gmail.com\n",
+            linkedin: "https://www.linkedin.com/in/christianmatthewuntalan/",
+            phone: "mobile: +639199928818",
         },
     },
 ];
@@ -132,6 +126,16 @@ export default function TeamPage() {
                                         className="text-zinc-500 hover:text-zinc-900 dark:hover:text-white"
                                     >
                                         <Phone className="h-5 w-5" />
+                                    </Link>
+                                )}
+
+                                {member.socials?.wechat && (
+                                    <Link
+                                        href={member.socials.wechat}
+                                        aria-label="Phone"
+                                        className="text-zinc-500 hover:text-zinc-900 dark:hover:text-white"
+                                    >
+                                        <img width="30" height="30" src="https://img.icons8.com/color/48/weixing.png" alt="weixing"/>
                                     </Link>
                                 )}
                             </div>
