@@ -40,7 +40,7 @@ export default function Home() {
                     <h1 className="max-w-5xl text-4xl font-semibold leading-tight tracking-tight sm:text-6xl md:text-7xl overflow-hidden">
       <span
           ref={taglineRef}
-          className="block font-semibold text-zinc-900 dark:text-zinc-100"
+          className="block font-semibold text-white dark:text-white"
       >
         Abstracting Complexities,
         <br />
@@ -89,7 +89,7 @@ export default function Home() {
                     ref={hypeTextRef}
                     className="pointer-events-none absolute inset-0 flex items-center justify-center"
                 >
-          <span className="select-none whitespace-nowrap text-[14rem] font-extrabold uppercase tracking-tight text-zinc-900/5 dark:text-white/5 sm:text-[18rem] md:text-[22rem]">
+          <span className="select-none whitespace-nowrap text-[14rem] font-extrabold uppercase tracking-tight text-grey-900/5 dark:text-white/5 sm:text-[18rem] md:text-[22rem]">
            Abstra
           </span>
                 </div>
@@ -99,7 +99,7 @@ export default function Home() {
                         We are not just for the hype of tech.
                     </h2>
 
-                    <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-zinc-600 dark:text-zinc-400">
+                    <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-white">
                         Technology is only valuable when it solves real problems.
                         We focus on building systems that are practical, scalable,
                         and engineered for long-term impact.
@@ -110,7 +110,7 @@ export default function Home() {
             {/* ================= PROCESS SECTION ================= */}
             <section
                 ref={processRef}
-                className="mx-auto max-w-7xl px-6 py-32"
+                className="mx-auto max-w-7xl px-6 py-32 text-white"
             >
                 {/* HEADER */}
                 <div className="mx-auto max-w-3xl text-center">
@@ -174,7 +174,7 @@ export default function Home() {
             {/* ================= FEATURE STRIP ================= */}
             <section
                 ref={principlesRef}
-                className="border-t border-zinc-200 bg-white py-16 dark:border-zinc-800 dark:bg-black"
+                className="border-t border-zinc-200  py-16 dark:border-zinc-800 dark:bg-black"
             >
                 <div className="mx-auto grid max-w-7xl gap-10 px-6 sm:grid-cols-3">
                     {[
