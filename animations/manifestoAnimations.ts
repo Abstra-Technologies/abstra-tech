@@ -2,8 +2,11 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SplitText from "gsap/SplitText";
 import ScrambleTextPlugin from "gsap/ScrambleTextPlugin";
+import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
+import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 
-gsap.registerPlugin(ScrollTrigger, SplitText, ScrambleTextPlugin);
+gsap.registerPlugin(ScrollTrigger, SplitText, ScrambleTextPlugin,   MorphSVGPlugin,
+    DrawSVGPlugin);
 
 export const animateManifestoIntro = (element: HTMLParagraphElement | null) => {
     if (!element) return;
@@ -111,4 +114,34 @@ export const animateHumilitySection = (
             "-=0.2"
         );
     });
+};
+
+
+export const animateManifestoSignature = (
+    container: HTMLElement | null
+) => {
+    if (!container) return;
+
+    const lines = container.querySelectorAll(".signature-line");
+
+    gsap.fromTo(
+        lines,
+        {
+            opacity: 0,
+            scale: 1.12,
+            y: 14,
+        },
+        {
+            opacity: 1,
+            scale: 1,
+            y: 0,
+            duration: 1,
+            ease: "power3.out",
+            stagger: 0.15,
+            scrollTrigger: {
+                trigger: container,
+                start: "top 92%",
+            },
+        }
+    );
 };

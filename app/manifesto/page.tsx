@@ -5,6 +5,7 @@ import {
     animateManifestoIntro,
     animateManifestoHeadline,
     animateHumilitySection,
+    animateManifestoSignature
 } from "@/animations/manifestoAnimations";
 
 export default function ManifestoPage() {
@@ -14,6 +15,7 @@ export default function ManifestoPage() {
     const humilityTitleRef = useRef<HTMLHeadingElement | null>(null);
     const humilityP1Ref = useRef<HTMLParagraphElement | null>(null);
     const humilityP2Ref = useRef<HTMLParagraphElement | null>(null);
+    const signatureRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
         animateManifestoIntro(introRef.current);
@@ -22,6 +24,8 @@ export default function ManifestoPage() {
             humilityP1Ref.current!,
             humilityP2Ref.current!,
         ]);
+        animateManifestoSignature(signatureRef.current);
+
     }, []);
 
     return (
@@ -61,7 +65,17 @@ export default function ManifestoPage() {
         </span>
 
                 <p className="mt-4 text-lg leading-relaxed text-zinc-600 dark:text-zinc-400">
-                    We exist to change that.
+                    Too many are built not from necessity, but from fear of being left behind —
+                    driven by hype, trends, and the illusion of progress.
+                </p>
+
+
+                <p className="mt-6 flex flex-wrap items-center gap-x-2 gap-y-2">
+                    <span className="mini-word-block">We</span>
+                    <span className="mini-word-block">exist</span>
+                    <span className="mini-word-block">to</span>
+                    <span className="mini-word-block">change</span>
+                    <span className="mini-word-block">that.</span>
                 </p>
             </section>
 
@@ -227,13 +241,21 @@ export default function ManifestoPage() {
             </section>
 
             {/* FOOTER */}
-            <footer className="border-t border-zinc-200 pt-10 dark:border-zinc-800">
-                <p className="text-sm text-zinc-500 dark:text-zinc-500">
-                    This is Abstra.
-                    <br />
-                    Clarity, engineered.
-                </p>
+            <footer
+                ref={signatureRef}
+                className="border-t border-zinc-200 pt-14 dark:border-zinc-800"
+            >
+                <div className="signature-wrap">
+    <span className="signature-line primary gold-shine">
+      This is Abstra.
+    </span>
+                    <span className="signature-line secondary gold-shine">
+      Clarity, engineered.
+    </span>
+                </div>
             </footer>
+
+
         </main>
     );
 }
