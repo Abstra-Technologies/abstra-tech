@@ -32,7 +32,7 @@ export default function Home() {
 
             {/* ================= HERO ================= */}
             <VantaWavesHero>
-                <main className="mx-auto flex max-w-7xl flex-col items-center px-6 py-24 text-center select-none user-select-none"n>
+                <main className="mx-auto flex max-w-7xl flex-col items-center px-6 py-24 text-center select-none user-select-none">
     <span className="mb-6 inline-flex items-center rounded-full border border-zinc-200 bg-white/80 px-4 py-1 text-xs font-medium text-zinc-600 dark:border-zinc-800 dark:bg-zinc-900/80 dark:text-zinc-400">
       Technology • Platforms • Engineering
     </span>
