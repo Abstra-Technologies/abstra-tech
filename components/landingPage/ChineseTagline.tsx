@@ -63,6 +63,5 @@ export default function ChineseTagline({ delay = 0 }: Props) {
             ))}
         </h2>
 
-
     );
 }
