@@ -59,10 +59,10 @@ export default function VantaWavesHero({
             {/* VANTA CONTAINER */}
             <section
                 ref={vantaRef}
-                className="relative overflow-hidden bg-black"
+                className="relative overflow-hidden bg-black/30"
             >
                 {/* 🔥 DARK-ONLY READABILITY OVERLAY */}
-                <div className="absolute inset-0 bg-black/70" />
+                <div className="absolute inset-0 bg-black/30" />
 
                 {/* CONTENT */}
                 <div className="relative z-10">{children}</div>
