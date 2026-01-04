@@ -31,13 +31,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-
       <SmoothScrollProvider>
           <Header />
           {children}
           <Footer />
       </SmoothScrollProvider>
-
       </body>
     </html>
   );
