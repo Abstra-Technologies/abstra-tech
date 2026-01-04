@@ -301,35 +301,3 @@ body {
 }
 
 
-.gold-cn-char {
-    background: linear-gradient(
-            120deg,
-            #8c6b1f,
-            #d4af37,
-            #fff2b0,
-            #d4af37,
-            #8c6b1f
-    );
-    background-size: 300% 100%;
-    background-position: 0% 50%;
-
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-
-    animation: goldShine 9s ease-in-out infinite;
-
-    will-change: transform, opacity;
-}
-
-.dark .gold-cn-char {
-    background: linear-gradient(
-            120deg,
-            #a07c2a,
-            #f1d27a,
-            #fff6cc,
-            #f1d27a,
-            #a07c2a
-    );
-}
-
