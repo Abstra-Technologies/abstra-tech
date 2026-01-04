@@ -27,31 +27,7 @@ export default function Home() {
 
     return (
         <div className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-black dark:text-zinc-50">
-            {/* ================= HEADER ================= */}
-            <header className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
-                <div className="flex items-center gap-3">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-black text-white dark:bg-white dark:text-black font-bold">
-                        A
-                    </div>
-                    <span className="text-lg font-semibold tracking-tight">
-            Abstra Technologies
-          </span>
-                </div>
 
-                <nav className="hidden items-center gap-8 text-sm font-medium text-zinc-600 dark:text-zinc-400 md:flex">
-                    <Link href="#">Products</Link>
-                    <Link href="#">Solutions</Link>
-                    <Link href="#">Company</Link>
-                    <Link href="#">Careers</Link>
-                </nav>
-
-                <Link
-                    href="#"
-                    className="rounded-full bg-black px-5 py-2 text-sm font-medium text-white transition hover:bg-zinc-800 dark:bg-white dark:text-black dark:hover:bg-zinc-200"
-                >
-                    Contact Us
-                </Link>
-            </header>
 
             {/* ================= HERO ================= */}
             <main className="mx-auto flex max-w-7xl flex-col items-center px-6 py-24 text-center">
