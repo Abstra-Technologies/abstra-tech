@@ -100,7 +100,7 @@ export default function Header() {
 
                     <span className="text-lg font-semibold tracking-tight">
             <span className="gold-shine">Abstra</span>{" "}
-                        <span className="text-zinc-800 dark:text-zinc-200">
+                        <span className="text-white">
               Technologies
             </span>
           </span>
