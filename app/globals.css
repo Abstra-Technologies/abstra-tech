@@ -271,3 +271,36 @@ body {
     font-weight: 500;
     opacity: 0.9;
 }
+
+.gold-char {
+    background: linear-gradient(
+            120deg,
+            #8c6b1f,
+            #d4af37,
+            #fff2b0,
+            #d4af37,
+            #8c6b1f
+    );
+    background-size: 300% 100%;
+    background-position: 0% 50%;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    animation: goldShine 8s ease-in-out infinite;
+
+    will-change: transform, opacity;
+}
+
+@keyframes goldShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

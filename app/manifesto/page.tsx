@@ -5,7 +5,8 @@ import {
     animateManifestoIntro,
     animateManifestoHeadline,
     animateHumilitySection,
-    animateManifestoSignature
+    animateManifestoSignature,
+    animateManifestoTitle
 } from "@/animations/manifestoAnimations";
 
 export default function ManifestoPage() {
@@ -16,6 +17,7 @@ export default function ManifestoPage() {
     const humilityP1Ref = useRef<HTMLParagraphElement | null>(null);
     const humilityP2Ref = useRef<HTMLParagraphElement | null>(null);
     const signatureRef = useRef<HTMLDivElement | null>(null);
+    const titleRef = useRef<HTMLHeadingElement | null>(null);
 
     useEffect(() => {
         animateManifestoIntro(introRef.current);
@@ -25,16 +27,32 @@ export default function ManifestoPage() {
             humilityP2Ref.current!,
         ]);
         animateManifestoSignature(signatureRef.current);
+        animateManifestoTitle(titleRef.current);
 
     }, []);
 
     return (
-        <main className="relative mx-auto max-w-4xl px-6 py-28 text-zinc-900 dark:text-zinc-100">
+        <main className="relative mx-auto max-w-4xl px-6 py-28 text-zinc-900 select-none dark:text-zinc-100">
             {/* INTRO */}
             <section className="mb-24">
                 <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
-                    The Abstra Manifesto
+                    The Abstra{" "}
+                    <span
+
+                        className="manifesto-word inline-flex"
+                    >
+    {"Manifesto".split("").map((char, i) => (
+        <span
+            key={i}
+            className="manifesto-char gold-char inline-block"
+        >
+        {char}
+      </span>
+    ))}
+  </span>
                 </h1>
+
+
 
                 <p
                     ref={introRef}
