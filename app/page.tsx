@@ -71,10 +71,10 @@ export default function Home() {
                         </Link>
 
                         <Link
-                            href="#"
+                            href="/manifesto"
                             className="flex h-12 items-center justify-center rounded-full border border-zinc-300 px-8 text-sm font-medium transition hover:bg-zinc-100 dark:border-zinc-700 dark:hover:bg-zinc-900"
                         >
-                            Learn More
+                           Our Manifesto
                         </Link>
                     </div>
                 </main>
