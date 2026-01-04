@@ -24,3 +24,31 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+/* ===============================
+   GOLD SHINE ANIMATION
+================================ */
+
+.gold-shine {
+    background: linear-gradient(
+            110deg,
+            #b38728 0%,
+            #ffd700 20%,
+            #fff1a8 40%,
+            #ffd700 60%,
+            #b38728 80%
+    );
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    animation: goldShine 3.5s linear infinite;
+}
+
+@keyframes goldShine {
+    to {
+        background-position: 200% center;
+    }
+}
