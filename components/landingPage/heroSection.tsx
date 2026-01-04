@@ -26,8 +26,8 @@ export default function VantaWavesHero({
                     scale: 1,
                     scaleMobile: 1,
 
-                    // 🌊 Subtle, premium tuning
-                    color: 0x0f172a,
+                    // 🌊 Dark, premium tuning
+                    color: 0x020617, // near-black navy
                     shininess: 20,
                     waveHeight: 15,
                     waveSpeed: 0.6,
@@ -40,9 +40,7 @@ export default function VantaWavesHero({
 
         return () => {
             clearTimeout(timeout);
-            if (vantaEffect.current) {
-                vantaEffect.current.destroy();
-            }
+            vantaEffect.current?.destroy();
         };
     }, []);
 
@@ -59,11 +57,14 @@ export default function VantaWavesHero({
             />
 
             {/* VANTA CONTAINER */}
-            <section ref={vantaRef} className="relative overflow-hidden">
-                {/* Readability overlay */}
-                <div className="absolute inset-0 bg-white/80 dark:bg-black/80" />
+            <section
+                ref={vantaRef}
+                className="relative overflow-hidden bg-black"
+            >
+                {/* 🔥 DARK-ONLY READABILITY OVERLAY */}
+                <div className="absolute inset-0 bg-black/70" />
 
-                {/* Content */}
+                {/* CONTENT */}
                 <div className="relative z-10">{children}</div>
             </section>
         </>
