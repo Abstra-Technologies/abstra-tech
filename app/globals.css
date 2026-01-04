@@ -25,6 +25,26 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+@font-face {
+    font-family: "ZiKuXingQiuFeiYangTi";
+    src: url("../public/fonts/ZiKuXingQiuFeiYangTi-2.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.typographica {
+    font-family: "ZiKuXingQiuFeiYangTi",
+    "PingFang SC",
+    "Noto Sans SC",
+    system-ui,
+    sans-serif;
+}
+
+
+
+
 /* ===== GSAP ScrollSmoother FIXES ===== */
 
 html,
