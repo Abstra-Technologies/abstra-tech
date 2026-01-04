@@ -9,6 +9,7 @@ import {
     animatePrinciples,
     animateProcessTimeline
 } from "@/animations/landingAnimations";
+import VantaWavesHero from "@/components/landingPage/heroSection";
 
 export default function Home() {
     const taglineRef = useRef<HTMLSpanElement | null>(null);
@@ -28,52 +29,53 @@ export default function Home() {
     return (
         <div className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-black dark:text-zinc-50">
 
-
             {/* ================= HERO ================= */}
-            <main className="mx-auto flex max-w-7xl flex-col items-center px-6 py-24 text-center">
-        <span className="mb-6 inline-flex items-center rounded-full border border-zinc-200 bg-white px-4 py-1 text-xs font-medium text-zinc-600 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-400">
-          Technology • Platforms • Engineering
-        </span>
+            <VantaWavesHero>
+                <main className="mx-auto flex max-w-7xl flex-col items-center px-6 py-24 text-center">
+    <span className="mb-6 inline-flex items-center rounded-full border border-zinc-200 bg-white/80 px-4 py-1 text-xs font-medium text-zinc-600 dark:border-zinc-800 dark:bg-zinc-900/80 dark:text-zinc-400">
+      Technology • Platforms • Engineering
+    </span>
 
-                <h1 className="max-w-5xl text-4xl font-semibold leading-tight tracking-tight sm:text-6xl md:text-7xl overflow-hidden">
-          <span
-              ref={taglineRef}
-              className="block font-semibold text-zinc-900 dark:text-zinc-100"
-          >
-            Abstracting Complexities,
-            <br />
-            Engineering the Future.
-          </span>
-                </h1>
+                    <h1 className="max-w-5xl text-4xl font-semibold leading-tight tracking-tight sm:text-6xl md:text-7xl overflow-hidden">
+      <span
+          ref={taglineRef}
+          className="block font-semibold text-zinc-900 dark:text-zinc-100"
+      >
+        Abstracting Complexities,
+        <br />
+        Engineering the Future.
+      </span>
+                    </h1>
 
-                <h2 className="mt-6 text-lg font-medium tracking-wide text-zinc-600 dark:text-zinc-400 sm:text-xl">
-                    <span className="gold-shine">Abstra</span> Technologies
-                    <span className="block text-sm uppercase tracking-[0.25em] text-zinc-500">
-            Corporation
-          </span>
-                </h2>
+                    <h2 className="mt-6 text-lg font-medium tracking-wide text-zinc-600 dark:text-zinc-400 sm:text-xl">
+                        <span className="gold-shine">Abstra</span> Technologies
+                        <span className="block text-sm uppercase tracking-[0.25em] text-zinc-500">
+        Corporation
+      </span>
+                    </h2>
 
-                <p className="mt-6 max-w-2xl text-base leading-7 text-zinc-600 dark:text-zinc-400">
-                    We build scalable platforms, intelligent systems, and digital
-                    solutions that empower businesses to move faster and smarter.
-                </p>
+                    <p className="mt-6 max-w-2xl text-base leading-7 text-zinc-600 dark:text-zinc-400">
+                        We build scalable platforms, intelligent systems, and digital
+                        solutions that empower businesses to move faster and smarter.
+                    </p>
 
-                <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-                    <Link
-                        href="#"
-                        className="flex h-12 items-center justify-center rounded-full bg-black px-8 text-sm font-medium text-white transition hover:bg-zinc-800 dark:bg-white dark:text-black dark:hover:bg-zinc-200"
-                    >
-                        Explore Our Solutions
-                    </Link>
+                    <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+                        <Link
+                            href="#"
+                            className="flex h-12 items-center justify-center rounded-full bg-black px-8 text-sm font-medium text-white transition hover:bg-zinc-800 dark:bg-white dark:text-black dark:hover:bg-zinc-200"
+                        >
+                            Explore Our Solutions
+                        </Link>
 
-                    <Link
-                        href="#"
-                        className="flex h-12 items-center justify-center rounded-full border border-zinc-300 px-8 text-sm font-medium transition hover:bg-zinc-100 dark:border-zinc-700 dark:hover:bg-zinc-900"
-                    >
-                        Learn More
-                    </Link>
-                </div>
-            </main>
+                        <Link
+                            href="#"
+                            className="flex h-12 items-center justify-center rounded-full border border-zinc-300 px-8 text-sm font-medium transition hover:bg-zinc-100 dark:border-zinc-700 dark:hover:bg-zinc-900"
+                        >
+                            Learn More
+                        </Link>
+                    </div>
+                </main>
+            </VantaWavesHero>
 
             {/* ================= HYPE SECTION ================= */}
             <section
@@ -196,10 +198,6 @@ export default function Home() {
                 </div>
             </section>
 
-            <footer className="border-t border-zinc-200 py-10 text-center text-sm text-zinc-500 dark:border-zinc-800 dark:text-zinc-400">
-                © {new Date().getFullYear()} Abstra Technologies Corporation. All rights
-                reserved.
-            </footer>
         </div>
     );
 }

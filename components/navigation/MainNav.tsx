@@ -14,7 +14,7 @@ export default function Header() {
         }`;
 
     return (
-        <header className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 bg-black">
+        <header className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 bg-transparent">
             {/* LOGO */}
             <div className="flex items-center gap-3">
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-black text-white dark:bg-white dark:text-black font-bold">
