@@ -49,6 +49,9 @@ export default function Header() {
                 <Link href="/company" className={linkClass("/company")}>
                     About Us
                 </Link>
+                <Link href="/team" className={linkClass("/team")}>
+                    The Team
+                </Link>
                 <Link href="/careers" className={linkClass("/careers")}>
                     Careers
                 </Link>
