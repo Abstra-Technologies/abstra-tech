@@ -57,35 +57,39 @@ export default function Home() {
 
             {/* ================= HERO ================= */}
             <main className="mx-auto flex max-w-7xl flex-col items-center px-6 py-24 text-center">
-        <span className="mb-4 inline-flex items-center rounded-full border border-zinc-200 bg-white px-4 py-1 text-xs font-medium text-zinc-600 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-400">
-          Technology • Platforms • Engineering
-        </span>
+                {/* Pill */}
+                <span className="mb-6 inline-flex items-center rounded-full border border-zinc-200 bg-white px-4 py-1 text-xs font-medium text-zinc-600 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-400">
+    Technology • Platforms • Engineering
+  </span>
 
-                <h1 className="max-w-4xl text-4xl font-semibold leading-tight tracking-tight sm:text-6xl">
-  <span className="inline-block gold-shine">
-    Abstra
-  </span>{" "}
-                    Technologies
-                    <span className="block bg-gradient-to-r from-zinc-900 to-zinc-500 bg-clip-text text-transparent dark:from-white dark:to-zinc-400">
-    Corporation
+                {/* PRIMARY TAGLINE */}
+                <h1 className="max-w-5xl text-4xl font-semibold leading-tight tracking-tight sm:text-6xl md:text-7xl overflow-hidden">
+  <span
+      ref={taglineRef}
+      className="block font-semibold text-zinc-900 dark:text-zinc-100"
+  >
+    Abstracting Complexities,
+    <br />
+    Engineering the Future.
   </span>
                 </h1>
 
 
-                <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-       <span
-           ref={taglineRef}
-           className="font-medium text-zinc-900 dark:text-zinc-100"
-       >
-  Abstracting Complexities, Engineering the Future.
-</span>
+                {/* SECONDARY COMPANY NAME */}
+                <h2 className="mt-6 text-lg font-medium tracking-wide text-zinc-600 dark:text-zinc-400 sm:text-xl">
+                    <span className="gold-shine">Abstra</span> Technologies
+                    <span className="block text-sm uppercase tracking-[0.25em] text-zinc-500 dark:text-zinc-500">
+      Corporation
+    </span>
+                </h2>
 
-<br/>
-                    {" "}
-                    We build scalable platforms, intelligent systems, and digital
-                    solutions that empower businesses to move faster and smarter.
+                {/* SUPPORTING COPY */}
+                <p className="mt-6 max-w-2xl text-base leading-7 text-zinc-600 dark:text-zinc-400">
+                    We build scalable platforms, intelligent systems, and digital solutions
+                    that empower businesses to move faster and smarter.
                 </p>
 
+                {/* CTA */}
                 <div className="mt-10 flex flex-col gap-4 sm:flex-row">
                     <Link
                         href="#"
