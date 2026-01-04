@@ -1,0 +1,43 @@
+{
+  "name": "Abstra Technologies Corporation",
+  "short_name": "Abstra Technologies",
+  "description": "Official Website of Abstra Technologies Corporation",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "orientation": "portrait",
+  "categories": [
+    "enterprise solutions",
+    "productivity",
+    "rental management",
+    "saas"
+  ],
+  "lang": "en",
+  "dir": "ltr",
+
+  "icons": [
+    {
+      "src": "/upkyp_icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/upkyp_icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+
+  "shortcuts": [
+    {
+      "name": "Find Rent",
+      "short_name": "Find Rent",
+      "url": "/pages/find-rent",
+      "description": "Browse available rental units and properties."
+    }
+  ]
+}
