@@ -32,7 +32,7 @@ export default function ManifestoPage() {
     }, []);
 
     return (
-        <main className="relative mx-auto max-w-4xl px-6 py-28 text-zinc-900 select-none dark:text-zinc-100">
+        <main className="relative mx-auto max-w-4xl px-6 py-28 text-white select-none dark:text-white">
             {/* INTRO */}
             <section className="mb-24">
                 <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
