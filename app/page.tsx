@@ -72,7 +72,7 @@ export default function Home() {
 
                         <Link
                             href="/manifesto"
-                            className="flex h-12 items-center justify-center rounded-full border border-zinc-300 px-8 text-sm font-medium transition hover:bg-zinc-100 dark:border-zinc-700 dark:hover:bg-zinc-900"
+                            className="flex text-white h-12 items-center justify-center rounded-full border border-zinc-300 px-8 text-sm font-medium transition hover:bg-zinc-100 dark:border-zinc-700 dark:hover:bg-zinc-900"
                         >
                            Our Manifesto
                         </Link>
@@ -95,7 +95,7 @@ export default function Home() {
                 </div>
 
                 <div className="relative z-10">
-                    <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
+                    <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
                         We are not just for the hype of tech.
                     </h2>
 
