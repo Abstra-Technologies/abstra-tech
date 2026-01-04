@@ -1,7 +1,32 @@
+"use client";
+
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
 import Image from "next/image";
 import Link from "next/link";
+import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
+gsap.registerPlugin(ScrambleTextPlugin);
 
 export default function Home() {
+
+    const taglineRef = useRef<HTMLSpanElement | null>(null);
+
+    useEffect(() => {
+        if (!taglineRef.current) return;
+
+        gsap.to(taglineRef.current, {
+            duration: 1.6,
+            scrambleText: {
+                text: "Abstracting Complexities, Engineering the Future.",
+                chars: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*",
+                revealDelay: 0.4,
+                speed: 0.5,
+            },
+            ease: "power3.out",
+            delay: 0.8,
+        });
+    }, []);
+
     return (
         <div className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-black dark:text-zinc-50">
             {/* ================= HEADER ================= */}
@@ -48,9 +73,15 @@ export default function Home() {
 
 
                 <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-          <span className="font-medium text-zinc-900 dark:text-zinc-100">
-            Abstracting Complexities, Engineering the Future.
-          </span>{" "}
+       <span
+           ref={taglineRef}
+           className="font-medium text-zinc-900 dark:text-zinc-100"
+       >
+  Abstracting Complexities, Engineering the Future.
+</span>
+
+<br/>
+                    {" "}
                     We build scalable platforms, intelligent systems, and digital
                     solutions that empower businesses to move faster and smarter.
                 </p>
