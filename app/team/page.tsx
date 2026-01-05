@@ -7,6 +7,7 @@ import {
     Phone,
     Facebook,
     Linkedin,
+    Twitter
 } from "lucide-react";
 
 const team = [
@@ -16,11 +17,11 @@ const team = [
         bio: "Leads architecture, platform engineering, and long-term technical strategy. Focused on building durable systems that scale responsibly.",
         image: "https://media.licdn.com/dms/image/v2/D5603AQGMLSH52DJ5fQ/profile-displayphoto-crop_800_800/B56Zmj6kqcG4AI-/0/1759391666675?e=1769040000&v=beta&t=V-W5uNZWGRjdu_b7Zm7TdRSg1v9jStBzddqjrVTw2EE", // replace when ready
         socials: {
-            facebook: "https://facebook.com/yourprofile",
             linkedin: "https://www.linkedin.com/in/brylimziliang",
             email: "mailto:bryanqlim@gmail.com",
             phone: "mobile: +639213218888",
             wechat: "https://wechat.com/",
+            twitter:"https://x.com/lim_bry53805"
         },
     },
     {
@@ -87,17 +88,6 @@ export default function TeamPage() {
 
                             {/* SOCIAL LINKS */}
                             <div className="mt-6 flex items-center gap-4">
-                                {member.socials?.facebook && (
-                                    <Link
-                                        href={member.socials.facebook}
-                                        target="_blank"
-                                        aria-label="Facebook"
-                                        className="text-zinc-500 hover:text-zinc-900 dark:hover:text-white"
-                                    >
-                                        <Facebook className="h-5 w-5" />
-                                    </Link>
-                                )}
-
                                 {member.socials?.linkedin && (
                                     <Link
                                         href={member.socials.linkedin}
@@ -126,6 +116,16 @@ export default function TeamPage() {
                                         className="text-zinc-500 hover:text-zinc-900 dark:hover:text-white"
                                     >
                                         <Phone className="h-5 w-5" />
+                                    </Link>
+                                )}
+
+                                {member.socials?.twitter && (
+                                    <Link
+                                        href={member.socials.twitter}
+                                        aria-label="twitter"
+                                        className="text-zinc-500 hover:text-zinc-900 dark:hover:text-white"
+                                    >
+                                        <Twitter  className="h-5 w-5" />
                                     </Link>
                                 )}
 
