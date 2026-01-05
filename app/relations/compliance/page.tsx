@@ -95,23 +95,22 @@ export default function CompliancePage() {
                                     </div>
                                 </li>
 
-                                {/* BIR – COR */}
-
 
                                 {/* Statutory */}
-                                <li className="splide__slide">
-                                    <div className="flex h-full flex-col">
-                                        <div className="border-b border-zinc-800 px-4 py-2 text-center">
-                                            <p className="text-sm font-medium">
-                                                Statutory Records
-                                            </p>
-                                        </div>
-                                        <iframe
-                                            src="https://res.cloudinary.com/YOUR_CLOUD/raw/upload/v1/statutory-records.pdf#view=FitH"
-                                            className="flex-1 w-full"
-                                        />
-                                    </div>
-                                </li>
+                                {/*<li className="splide__slide">*/}
+                                {/*    <div className="flex h-full flex-col">*/}
+                                {/*        <div className="border-b border-zinc-800 px-4 py-2 text-center">*/}
+                                {/*            <p className="text-sm font-medium">*/}
+                                {/*                Statutory Records*/}
+                                {/*            </p>*/}
+                                {/*        </div>*/}
+                                {/*        <iframe*/}
+                                {/*            src="https://res.cloudinary.com/YOUR_CLOUD/raw/upload/v1/statutory-records.pdf#view=FitH"*/}
+                                {/*            className="flex-1 w-full"*/}
+                                {/*        />*/}
+                                {/*    </div>*/}
+                                {/*</li>*/}
+
                             </ul>
                         </div>
                     </div>
