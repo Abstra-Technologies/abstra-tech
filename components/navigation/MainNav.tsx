@@ -78,7 +78,7 @@ export default function Header() {
             label: "Relations",
             children: [
                 { href: "/relations/compliance", label: "Compliance" },
-                { href: "/relations/investors", label: "Investors" },
+                { href: "https://partnercircle.upkyp.com", label: "Partners & Investors" },
             ],
         },
 
@@ -201,7 +201,7 @@ export default function Header() {
                 {/* DESKTOP CTA */}
                 <Link
                     ref={ctaRef}
-                    href="/contact"
+                    href="https://partnercircle.upkyp.com/contact"
                     className="hidden md:inline-flex rounded-full bg-black/90 px-5 py-2 text-sm font-medium text-white dark:bg-white/90 dark:text-black"
                 >
                     Contact Us
@@ -261,7 +261,7 @@ export default function Header() {
                     )}
 
                     <Link
-                        href="/contact"
+                        href="https://partnercircle.upkyp.com/contact"
                         className="px-6 py-4 text-sm font-semibold text-center text-white bg-black dark:bg-white dark:text-black rounded-b-2xl"
                     >
                         Contact Us

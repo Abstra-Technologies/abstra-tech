@@ -28,7 +28,7 @@ const team = [
         name: "Christian Matthew Untalan",
         role: "Co-Founder",
         bio: "",
-        image: "/team/placeholder.jpg",
+        image: "https://media.licdn.com/dms/image/v2/D5635AQGZBIhzFOrEMA/profile-framedphoto-shrink_800_800/B56ZknFotdKEAg-/0/1757297413325?e=1768888800&v=beta&t=HZbqPmVG8yAwz2YDa49nfL3G5f8GjeSvAsEs60Nqn_4",
         socials: {
             email: "mailto:mattuntalan2@gmail.com\n",
             linkedin: "https://www.linkedin.com/in/christianmatthewuntalan/",
